@@ -1,14 +1,15 @@
 body {
   margin: 0;
-  background-image: linear-gradient(rgba(239, 231, 220, 0.3), rgba(239, 231, 220, 0.3)), url('/public/bgxmas.jpg'); /* */
+  background-image: url('/public/bgxmas.jpg'); /* linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), */
   background-color: #4A8764;
-  color: #E9E3C9;
+  color: #F3BD3C;
   text-align: center;
   font-family: 'Permanent Marker', cursive;
 }
 
 p {
   font-family: 'IBM Plex Serif', serif;
+  font-weight: 700;
 }
 
 .material-symbols-outlined {
@@ -18,7 +19,7 @@ p {
   margin: 0em 0.5em;
   line-height: 150%;
   font-size: 3em;
-  color: #E9E3C9;
+  color: #F3BD3C;
 }
 
 button {
@@ -30,7 +31,7 @@ button {
 
 .title {
   font-size: 2em;
-  font-family: 'Righteous', cursive;
+  font-family: 'Righteous', 'Pacifico', cursive;
 }
 
 .artist {
@@ -39,5 +40,5 @@ button {
 }
 
 .p-5 {
-  background-color: hsla(354, 53%, 45%);
+  background-color: hsla(235, 63%, 30%, .75);
 }
