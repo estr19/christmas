@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  background-image: linear-gradient(rgba(239, 231, 220, 0.3), rgba(239, 231, 220, 0.3)), url('/public/bgxmas.jpg'); /* */
+  background-color: #4A8764;
+  color: #E9E3C9;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+}
+
+p {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.material-symbols-outlined {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0em 0.5em;
+  line-height: 150%;
+  font-size: 3em;
+  color: #E9E3C9;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.title {
+  font-size: 2em;
+  font-family: 'Righteous', cursive;
+}
+
+.artist {
+  font-size: 1.5em;
+  font-family: 'Marmelad', sans-serif;
+}
+
+.p-5 {
+  background-color: hsla(354, 53%, 45%);
+}
