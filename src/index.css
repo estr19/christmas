@@ -1,14 +1,19 @@
 body {
   margin: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0)), url('/public/bgxmas.jpg'); /* */
-  background-color: #4A8764;
-  color: #F3BD3C;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0)
+    ),
+    url("/public/bgxmas.jpg");
+  /* */
+  background-color: #171d2d;
+  color: #f3bd3c;
   text-align: center;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
 }
 
 p {
-  font-family: 'IBM Plex Serif', serif;
+  font-family: "IBM Plex Serif", serif;
   font-weight: 700;
 }
 
@@ -16,40 +21,61 @@ p {
   background: transparent;
   border: none;
   cursor: pointer;
-  margin: 0em 0.5em;
-  line-height: 150%;
-  font-size: 3em;
-  color: #F3BD3C;
+  margin: 0.15em 0.05em;
+  font-size: 2.5em;
+  color: #f3bd3c;
 }
 
 button {
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0;
+  margin: 10px;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
   font-size: 2em;
-  font-family: 'Righteous', 'Pacifico', cursive;
+  font-family: "Righteous", "Pacifico", cursive;
 }
 
 .artist {
   font-size: 1.5em;
-  font-family: 'Marmelad', sans-serif;
+  font-family: "Marmelad", sans-serif;
 }
 
 .opaque {
-  padding: 10px;
-  background-color: hsla(235, 63%, 30%, .8);
+  background-color: hsla(235, 63%, 30%, 0.9);
+  border-radius: 10px;
+  padding: 6px 10px;
+  text-align: center;
+  width: fit-content;
 }
 
 .audio-controls {
   width: fit-content;
 }
 
-.audio-player {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.glow {
+  color: #ffde37;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px #181d68,0 0 30px #181d68, 0 0 40px #181d68, 0 0 50px #181d68,
+      0 0 60px #181d68, 0 0 70px #181d68, 0 0 80px #1c247d, 0 0 90px #1c247d;
+  }
+
+  to {
+    text-shadow: 0 0 20px #1c247d, 0 0 30px #1c247d, 0 0 40px #181e68,
+      0 0 50px #131753, 0 0 60px #131753, 0 0 70px #131753, 0 0 80px #131753,
+      0 0 90px #131753, 0 0 100px #131753, 0 0 110px #131753;
+  }
 }

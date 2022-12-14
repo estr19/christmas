@@ -48,7 +48,7 @@ const AudioPlayer = ({ tracks }) => {
   }, [audioSrc]);
 
   return (
-    <div className="audio-player">
+    <div className="audio-player centered">
       <p className="title"><span className="opaque">"{title}"</span></p>
       <p className="artist"><span className="opaque">{artist}</span></p>
       <AudioControls
