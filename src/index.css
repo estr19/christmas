@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: url('/public/bgxmas.jpg'); /* linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0)), url('/public/bgxmas.jpg'); /* */
   background-color: #4A8764;
   color: #F3BD3C;
   text-align: center;
@@ -40,7 +40,7 @@ button {
 }
 
 .opaque {
-  padding: .3em;
+  padding: 10px;
   background-color: hsla(235, 63%, 30%, .75);
 }
 
