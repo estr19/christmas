@@ -6,7 +6,7 @@ const AudioControls = ({
   onPrevClick,
   onNextClick
 }) => (
-  <div className="audio-controls">
+  <div className="audio-controls opaque">
     <button
       onClick={onPrevClick}
       className="prev"

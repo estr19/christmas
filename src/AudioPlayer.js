@@ -49,8 +49,8 @@ const AudioPlayer = ({ tracks }) => {
 
   return (
     <div className="audio-player">
-      <p className="title">"{title}"</p>
-      <p className="artist">{artist}</p>
+      <p className="title"><span className="opaque">"{title}"</span></p>
+      <p className="artist"><span className="opaque">{artist}</span></p>
       <AudioControls
         isPlaying={isPlaying}
         onPlayPauseClick={setIsPlaying}
