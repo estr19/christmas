@@ -6,10 +6,10 @@ function App() {
   return (
     <div className="d-flex justify-content-md-center align-items-center vh-100">
       <div>
-        <h1 className="display-4 fw-bold lh-1"><span className="opaque">Merry Chrsitmas and Happy New Year!</span></h1>
+        <h1 className="display-4 fw-bold lh-1 opaque">Merry Chrsitmas and Happy New Year!</h1>
         <br></br>
         <br></br>
-        <p><span className="opaque">Some of my all-time favorites - old and new, English and Russian, Christmas and New Year!</span></p>
+        <p className="opaque">Some of my all-time favorites - old and new, English and Russian, Christmas and New Year!</p>
         <br></br>
         <AudioPlayer tracks={tracks} />
       </div>

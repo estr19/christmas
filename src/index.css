@@ -41,7 +41,7 @@ button {
 
 .opaque {
   padding: 10px;
-  background-color: hsla(235, 63%, 30%, .75);
+  background-color: hsla(235, 63%, 30%, .8);
 }
 
 .audio-controls {
