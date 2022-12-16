@@ -50,7 +50,7 @@ button {
 }
 
 .opaque {
-  background-color: hsla(235, 63%, 30%, 0.9);
+  background-color: #181e68; /* hsla(235, 63%, 30%, 0.9) */
   border-radius: 10px;
   padding: 6px 10px;
   text-align: center;
@@ -69,13 +69,13 @@ button {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 20px #181d68,0 0 30px #181d68, 0 0 40px #181d68, 0 0 50px #181d68,
+    box-shadow: 0 0 20px #181d68,0 0 30px #181d68, 0 0 40px #181d68, 0 0 50px #181d68,
       0 0 60px #181d68, 0 0 70px #181d68, 0 0 80px #1c247d, 0 0 90px #1c247d;
   }
 
   to {
-    text-shadow: 0 0 20px #1c247d, 0 0 30px #1c247d, 0 0 40px #181e68,
+    box-shadow: 0 0 20px #181e68, 0 0 30px #181e68, 0 0 40px #181e68,
       0 0 50px #131753, 0 0 60px #131753, 0 0 70px #131753, 0 0 80px #131753,
-      0 0 90px #131753, 0 0 100px #131753, 0 0 110px #131753;
+      0 0 90px #131753, 0 0 100px #131753;
   }
 }
