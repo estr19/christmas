@@ -8,7 +8,6 @@ const AudioControls = ({
 }) => (
   <div className="audio-controls">
     <button
-      onClick={onPrevClick}
       className="prev opaque"
     >
       <span className="material-symbols-outlined">menu</span>
@@ -41,7 +40,6 @@ const AudioControls = ({
       <span className="material-symbols-outlined">skip_next</span>
     </button>
     <button
-      onClick={onPrevClick}
       className="prev opaque"
     >
       <span className="material-symbols-outlined">shuffle</span>
