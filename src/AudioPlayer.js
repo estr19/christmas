@@ -4,8 +4,7 @@ import AudioControls from "./AudioControls";
 const AudioPlayer = ({ tracks }) => {
   const [trackIndex, setTrackIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-
-  const { title, artist, audioSrc } = tracks[trackIndex];
+  const {title, artist, audioSrc} = tracks[trackIndex];
 
   const audioRef = useRef(new Audio(audioSrc));
   const isReady = useRef(false);
@@ -25,6 +24,15 @@ const AudioPlayer = ({ tracks }) => {
       setTrackIndex(trackIndex - 1);
     }
   };
+
+  const listClick = () => {
+    const x = document.getElementById('list');
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+  }
 
   useEffect(() => {
     if (isPlaying) {
@@ -52,6 +60,7 @@ const AudioPlayer = ({ tracks }) => {
       <p className="title"><span className="opaque">"{title}"</span></p>
       <p className="artist"><span className="opaque">{artist}</span></p>
       <AudioControls
+        onListClick={listClick}
         isPlaying={isPlaying}
         onPlayPauseClick={setIsPlaying}
         onNextClick={toNextTrack}

@@ -1,20 +1,22 @@
 body {
-  margin: 0;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0)
     ),
     url("/public/bgxmas.jpg");
   background-color: #171d2d;
+  background-attachment: fixed;
   color: #f3bd3c;
   text-align: center;
   font-family: "IBM Plex Serif", serif;
+  margin: 0;
 }
 
 h1 {
-  font-family: "Permanent Marker", cursive;
   background-color: #181e68;
   color: #ffde37;
+  font-family: "Permanent Marker", cursive;
+  margin-top: 2em;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
 }
@@ -63,15 +65,22 @@ button {
   width: fit-content;
 }
 
+li {
+  list-style: none;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+}
+
 @keyframes glow {
   from {
-    box-shadow: 0 0 20px #181d68,0 0 30px #181d68, 0 0 40px #181d68, 0 0 50px #181d68,
-      0 0 60px #181d68, 0 0 70px #181d68, 0 0 80px #1c247d, 0 0 90px #1c247d;
+    box-shadow: 0 0 30px #181d68, 0 0 40px #181d68, 0 0 50px #181d68, 0 0 60px #181d68,
+                0 0 70px #181d68, 0 0 80px #1c247d, 0 0 90px #1c247d;
   }
 
   to {
-    box-shadow: 0 0 20px #181e68, 0 0 30px #181e68, 0 0 40px #181e68,
-      0 0 50px #131753, 0 0 60px #131753, 0 0 70px #131753, 0 0 80px #131753,
-      0 0 90px #131753, 0 0 100px #131753;
+    box-shadow: 0 0 40px #181e68, 0 0 50px #131753, 0 0 60px #131753, 0 0 70px #131753,
+                0 0 80px #131753, 0 0 90px #131753, 0 0 100px #131753;
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 
 const AudioControls = ({
+  onListClick,
   isPlaying,
   onPlayPauseClick,
   onPrevClick,
@@ -8,7 +9,8 @@ const AudioControls = ({
 }) => (
   <div className="audio-controls">
     <button
-      className="prev opaque"
+      onClick={onListClick}
+      className="songlist opaque"
     >
       <span className="material-symbols-outlined">menu</span>
     </button>
@@ -40,7 +42,7 @@ const AudioControls = ({
       <span className="material-symbols-outlined">skip_next</span>
     </button>
     <button
-      className="prev opaque"
+      className="shuffle opaque"
     >
       <span className="material-symbols-outlined">shuffle</span>
     </button>
