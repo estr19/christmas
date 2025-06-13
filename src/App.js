@@ -4,7 +4,7 @@ import AudioPlayer from "./AudioPlayer";
 import { tracks } from  './tracks';
 
 function App() {
-  let showDate = new Date("January 1, 2024 00:00"); //
+  let showDate = new Date("January 1, 2026 00:00"); //"February 28, 2023 15:18"
   const [showTime, setShowTime] = useState([]);
   const [isLoading, setLoading] = useState(true);
   const [showDiscussion, setShowDiscussion] = useState(false);
@@ -50,7 +50,7 @@ function App() {
   return (
     <div>
       <div id="stickyTop">
-        {isLoading ? 'Loading . . . ' : 
+        {isLoading ? 'L o a d i n g . . . ' : 
         <p className='mb-0'>
         {showDiscussion ? (
           <p className='mb-0'>
